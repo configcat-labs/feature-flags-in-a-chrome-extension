@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout visualization</title>
+  <style>
+    body {
+      background-color: #f5f5f5;
+      font-family: sans-serif;
+      width: 250px;
+    }
+    h1 {
+      text-align: center;
+      margin: 0;
+      padding: 1rem;
+      background-color: #333;
+      color: #fff;
+    }
+    button {
+      display: block;
+      margin: 1rem auto;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 0.25rem;
+      background-color: #bf0000;
+      color: #fff;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #850404;
+    }
+    input {
+      display: block;
+      margin: 1rem auto;
+      width: 100%;
+      height: 50px;
+      border: none;
+      border-radius: 0.25rem;
+      cursor: pointer;
+    }
+    input::before{
+      content: "select a color!";
+      font-size: 1rem;
+    }
+
+  </style>
+</head>
+<body id="popup">
+  <h1>Layout visualization with feature flags</h1>
+  <button id="visualizer-btn">Toggle Visualizer</button>
+  <script src="main.js"></script>
+</body>
+</html>

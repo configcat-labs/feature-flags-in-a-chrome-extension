@@ -1,26 +1,41 @@
-# feature-flags-in-a-chrome-extension
-Showcasing the use of ConfigCat's Feature Flags in a Chromium Extension
+# Feature Flags in a Chrome Extension
 
+## Layout Visualization Extension with Feature Flags
 
-# Sample application name and/or blogpost title
+This repository contains a demo application demonstrating how to implement ConfigCat's feature flag services in a Chromium extension. The extension provides a visualization of a page layout and possible misalignment of individual HTML elements in the active browser tab.
 
-#### (Optional) In case the blog post is already published, please add: [Read the blog post here](https://configcat.com/blog/)
+The extension can behave in two ways based on the feature flag settings:
 
-A few words about the contents of the repository. Whats is this application about, what does it demonstrate? Add a backlink to https://configcat.com
+1. When the feature flag is toggled off, the extension outlines HTML elements on the currently open tab in red.
+2. When the feature flag is toggled on, the extension allows the user to customize the outline color.
+
+![visualization extension](./extension.png)
 
 ## Build & Run
 
-Instructions on how to build and run the application locally. A student or junior developer should be able to run the application.
-- Prerequisites
-- Steps, commands to run
+1. Clone this repository to your local machine.
+2. Open a terminal and navigate to the root directory of the sample app.
+3. Open the main.js file and update the ConfigCat SDK key and the feature flag name to match those set in the [ConfigCat Dashboard](https://app.configcat.com/dashboard).
 
-## Learn more
+4. Install the dependencies with:
 
-Useful links to technical resources.
+```shell
+npm run dev
+```
 
-Example:
-- Next.js Documentation - learn about Next.js features and API.
-- Learn Next.js - an interactive Next.js tutorial.
+5. Build the app with:
+
+```shell
+npm run build
+```
+
+6. Open Google Chrome and navigate to `chrome://extensions/`
+7. Enable developer mode
+8. Load the extension from the build directory into the Chrome browser.
+
+## Useful links:
+
+SDK on [NPM](https://nodei.co/npm/configcat-js-chromium-extension/)
 
 [**ConfigCat**](https://configcat.com) also supports many other frameworks and languages. Check out the full list of supported SDKs [here](https://configcat.com/docs/sdk-reference/overview/).
 
@@ -29,7 +44,7 @@ You can also explore other code samples for various languages, frameworks, and t
 Keep up with ConfigCat on [Twitter](https://twitter.com/configcat), [Facebook](https://www.facebook.com/configcat), [LinkedIn](https://www.linkedin.com/company/configcat/), and [GitHub](https://github.com/configcat).
 
 ## Author
-[Your Name](https://github.com/your_name)
+[Emil Kovacevic](https://github.com/emilkovacevic)
 
 ## Contributions
 Contributions are welcome!

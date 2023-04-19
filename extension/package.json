@@ -1,0 +1,16 @@
+{
+  "name": "withflag",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "webpack --mode production"
+  },
+  "author": "Emil Kovacevic",
+  "dependencies": {
+    "configcat-js-chromium-extension": "^0.0.1"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^11.0.0",
+    "webpack": "^5.77.0",
+    "webpack-cli": "^5.0.1"
+  }
+}

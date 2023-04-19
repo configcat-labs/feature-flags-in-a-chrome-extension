@@ -1,0 +1,16 @@
+{
+  "name": "css debugger with flags",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "description": "Showcase on how to use ConfigCat flags in a chrome extension which reveals bugs in the html layout of pages.",
+  "author": "Emil Kovacevic",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "ConfigCat flags in chrome extension"
+  },
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ]
+}

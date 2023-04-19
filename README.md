@@ -20,7 +20,7 @@ The extension can behave in two ways based on the feature flag settings:
 4. Install the dependencies with:
 
 ```shell
-npm run dev
+npm install
 ```
 
 5. Build the app with:
